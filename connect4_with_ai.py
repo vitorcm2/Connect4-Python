@@ -3,6 +3,7 @@ import random
 import pygame
 import sys
 import math
+from RandomPlayer import RandomPlayer
 
 BLUE = (0,0,255)
 BLACK = (0,0,0)
@@ -20,6 +21,8 @@ PLAYER_PIECE = 1
 AI_PIECE = 2
 
 WINDOW_LENGTH = 4
+
+random_player = RandomPlayer()
 
 def create_board():
 	board = np.zeros((ROW_COUNT,COLUMN_COUNT))
@@ -268,10 +271,12 @@ while not game_over:
 
 		#col = random.randint(0, COLUMN_COUNT-1)
 		#col = pick_best_move(board, AI_PIECE)
-		col, minimax_score = minimax(board, 5, -math.inf, math.inf, True)
+		#col, minimax_score = minimax(board, 5, -math.inf, math.inf, True)
+
+		col = random_player.move(2, board)
 
 		if is_valid_location(board, col):
-			#pygame.time.wait(500)
+			pygame.time.wait(500)
 			row = get_next_open_row(board, col)
 			drop_piece(board, row, col, AI_PIECE)
 
@@ -287,4 +292,4 @@ while not game_over:
 			turn = turn % 2
 
 	if game_over:
-		pygame.time.wait(3000)
+		pygame.time.wait(5000)
