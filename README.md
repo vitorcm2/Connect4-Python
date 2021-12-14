@@ -1,6 +1,18 @@
 # Connect4-Python
+
 Connect 4 programmed in python using pygame.
 
-Video walkthrough on programming this game: https://youtu.be/UYgyRArKDEs
+## Why I forked this project?
 
-Video walkthrough on programming the AI: https://youtu.be/MMLtza3CZFM
+Because I would like an user interface for my agents that know how to play Connect-4. 
+
+## Running
+
+````bash
+python3 -m virtualenv venv
+source venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+````
+
+The game is started by running `connect4.py`.
