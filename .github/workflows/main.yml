@@ -33,7 +33,7 @@ jobs:
       - env:
           GH_TOKEN: ${{ secrets.mkdocs }}
           GH_NAME: ci
-          GH_EMAIL: corsiferrao@gmail.com
+          GH_EMAIL: fabricio.barth@gmail.com
         run: |
           REMOTE="https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}"
           git config --global user.name "${GH_NAME}"
