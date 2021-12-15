@@ -1,0 +1,47 @@
+site_name: Pygame + Min-Max
+
+theme:
+  feature:
+    tabs: true
+  name: material
+
+docs_dir: content
+site_dir: docs
+
+site_url: https://fbarth.github.io/Connect4-Python/
+repo_name: "Connect4-Python"
+repo_url: https://github.com/fbarth/Connect4-Python
+edit_uri: edit/main/content/
+
+nav:
+  - Roteiro: index.md
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
+  - js/markdown-enhancer.js
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - attr_list
+
+plugins:
+  - git-revision-date-localized
+  - active-exercises:
+      report_url: http://localhost:8000/api/offerings/1/exercises/
+

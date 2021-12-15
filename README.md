@@ -15,5 +15,5 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ````
 
-The game is started by running `connect4.py` or `connect4_with_ai.py`. 
+The game is started by running `src/connect4.py` or `src/connect4_with_ai.py`. 
 

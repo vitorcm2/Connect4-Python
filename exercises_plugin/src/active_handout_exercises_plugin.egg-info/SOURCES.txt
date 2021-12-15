@@ -1,0 +1,10 @@
+pyproject.toml
+setup.cfg
+src/active_handout_exercises_plugin.egg-info/PKG-INFO
+src/active_handout_exercises_plugin.egg-info/SOURCES.txt
+src/active_handout_exercises_plugin.egg-info/dependency_links.txt
+src/active_handout_exercises_plugin.egg-info/entry_points.txt
+src/active_handout_exercises_plugin.egg-info/requires.txt
+src/active_handout_exercises_plugin.egg-info/top_level.txt
+src/handout_exercises/__init__.py
+src/handout_exercises/plugin.py

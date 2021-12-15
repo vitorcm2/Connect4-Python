@@ -3,10 +3,11 @@ from Player import Player
 
 class RandomPlayer(Player):
 
-    # Um jogador precisa implementar estes dois metodos: 
-
     def name(self):
         return "Random"
 
+    #
+    # retorn a coluna onde a bola será jogada
+    #
     def move(self, player_code, board):
         return randint(0, 6)

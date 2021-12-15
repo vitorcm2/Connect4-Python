@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+active-exercises = handout_exercises.plugin:FindExercises
+
