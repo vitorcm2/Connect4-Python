@@ -3,6 +3,8 @@ from Player import Player
 
 class RandomPlayer(Player):
 
+    # Um jogador precisa implementar estes dois metodos: 
+
     def name(self):
         return "Random"
 
