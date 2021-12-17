@@ -14,7 +14,8 @@ repo_url: https://github.com/fbarth/Connect4-Python
 edit_uri: edit/main/content/
 
 nav:
-  - Roteiro: index.md
+  - Introdução: index.md
+  - Executando e jogando: parte1.md
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js

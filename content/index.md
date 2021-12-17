@@ -1,13 +1,16 @@
 # Implementando um jogador de Connect-4
 
-* os alunos são convidados a jogar de forma manual e analisar o código feito.
+Liga4 é um jogo popular lançado pela empresa Milton Bradley Company (que foi adquirida pela Hasbro em 1984) em 1974, com o nome de "*Connect Four*". Neste jogo, os jogadores devem colocar as fichas estratégicamente na base, de forma a formar uma sequência com as 4 fichas da sua cor, ao mesmo tempo em que devem prestar atenção para bloquear as tentativas do oponente fazer o mesmo. Liga4 é um jogo para 2 jogadores, recomendado a partir de 5 anos e com duração média de 15 minutos.
 
-* depois eles precisam alterar o código para fazer com que um dos jogadores seja um robô - num primeiro momento um robô que só faz movimentos aleatórios.
+<p align="center">
+<figure>
+  <img src="lig4.jpg" alt="Jogo Liga4" />
+</figure>
+</p>
 
-* depois eles são convidados a pensar em um algoritmo (só pensar) porque logo em seguida eu explico a ideia do min-max e função de utilidade.
+**Na aula de hoje você irá**:
 
-* eles são convidados a alterar o código do jogo para chamar a implementação do min-max e brincar com a profundidade.
+- compreender como implementar um jogo de *Connect-4* usando pygame. 
+- compreender de uma forma introdutória como utilizar o algoritmo [Min-Max](https://en.wikipedia.org/wiki/Minimax) no desenvolvimento de robô capaz de jogar *Connect-4*.
 
-* eles são convidados a alterar o código para colocar dois robôs jogando um contra o outro.
-
-* no final posso finalizar a aula falando dos avanços da DeepMind nesta área (Go, Chess, Shogi, etc..)
+Vá para a próxima [parte](parte1.md) da aula.
