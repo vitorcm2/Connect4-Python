@@ -18,7 +18,8 @@ jobs:
 
       # Checkout source form GitHub
       - uses: actions/checkout@v2
-        with: { fetch-depth: 0 }
+        with:
+          fetch-depth: 0
 
       # Install Python runtime and dependencies
       - uses: actions/setup-python@v1
