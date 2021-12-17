@@ -6,7 +6,7 @@ theme:
   name: material
 
 docs_dir: content
-site_dir: /
+site_dir: docs
 
 site_url: https://fbarth.github.io/Connect4-Python/
 repo_name: "Connect4-Python"
