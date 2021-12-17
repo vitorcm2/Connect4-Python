@@ -1,18 +1,26 @@
 # Executando e jogando um Connect-4 eletrônico
 
-Os alunos são convidados a jogar de forma manual e analisar o código feito.
+O objetivo desta atividade é você entender um pouco melhor o jogo e se 
+divertir executando uma versão do jogo onde espera-se que os *dois jogadores 
+sejam humanos*, pois a entrada dos dados é completamente manual. 
+
+Considerando que você está na raiz do projeto, você deve executar a seguinte 
+sequência de comandos:
+
+```bash
+cd src
+python connect4.py
+```
+
+Depois de você executar o comando acima deve aparecer uma tela parecida com esta:
+
+<figure>
+  <img src="../connect4.png" width="300" />
+</figure>
 
 
-Depois eles precisam alterar o código para fazer com que um dos jogadores seja um robô - num primeiro momento um robô que só faz movimentos aleatórios.
+**Vamos jogar um pouco?**
 
-Depois eles são convidados a pensar em um algoritmo (só pensar) porque logo em seguida eu explico a ideia do min-max e função de utilidade.
-
-Eles são convidados a alterar o código do jogo para chamar a implementação do min-max e brincar com a profundidade.
-
-Eles são convidados a alterar o código para colocar dois robôs jogando um contra o outro.
-
-No final posso finalizar a aula falando dos avanços da DeepMind nesta área (Go, Chess, Shogi, etc..)
-
-## Referências
-
-* https://en.wikipedia.org/wiki/Connect_Four
+Deu para entender como o jogo funciona? Que tal abrir o código `connect4.py` e tentar entender o que 
+está escrito? O início do arquivo tem diversas funções que dizem respeito a lógica de funcionamento do jogo 
+*Connect-4*. No entanto, lá pela linha 94 começa toda uma lógica que está relacionado com o controle de eventos do pygame - algo que eu acho que você já sabe como funciona! 

@@ -1,6 +1,4 @@
-# Executando e jogando um Connect-4 eletrônico
-
-Os alunos são convidados a jogar de forma manual e analisar o código feito.
+# Colando um robô na partida
 
 Depois eles precisam alterar o código para fazer com que um dos jogadores seja um robô - num primeiro momento um robô que só faz movimentos aleatórios.
 
