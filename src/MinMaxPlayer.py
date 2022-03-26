@@ -161,8 +161,8 @@ class MinMaxPlayer(Player):
     def name(self):
         return "MinMax"
 
-    def move(self, player_code, board):
+    def move(self, player_code, board, depth=5):
 
-        col, minimax_score = minimax(board, 5, -math.inf, math.inf, True)
+        col, minimax_score = minimax(board, depth, -math.inf, math.inf, True)
         return col
 

@@ -148,8 +148,10 @@ while not game_over:
 	# # Ask for Player 2 Input
 	if turn == AI and not game_over:				
 
-		#col = random_player.move(2, board)
-		col = minmax_player.move(2, board)
+		if sys.argv[1] == 'random':
+			col = random_player.move(2, board, 0)
+		elif sys.argv[1] == 'minmax':
+			col = minmax_player.move(2, board, int(sys.argv[2]))
 
 		if is_valid_location(board, col):
 			pygame.time.wait(500)

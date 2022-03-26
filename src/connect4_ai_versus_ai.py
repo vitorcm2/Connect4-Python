@@ -3,6 +3,7 @@ import random
 import pygame
 from RandomPlayer import RandomPlayer
 from MinMaxPlayer import MinMaxPlayer
+import sys
 
 BLUE = (0,0,255)
 BLACK = (0,0,0)
@@ -32,6 +33,7 @@ def drop_piece(board, row, col, piece):
 	board[row][col] = piece
 
 def is_valid_location(board, col):
+	print(col)
 	print(board[ROW_COUNT-1][col])
 	return board[ROW_COUNT-1][col] == 0
 
@@ -105,18 +107,37 @@ myfont = pygame.font.SysFont("monospace", 75)
 
 turn = random.randint(PLAYER, AI)
 
+player = 1
+
+if sys.argv[1] == 'random':
+	player_1 = random_player
+	depth_1 = 0
+elif sys.argv[1] == 'minmax':
+	player_1 = minmax_player
+	depth_1 = int(sys.argv[2])
+
+if sys.argv[3] == 'random':
+	player_2 = random_player
+	depth_2 = 0
+elif sys.argv[3] == 'minmax':
+	player_2 = minmax_player
+	depth_2 = int(sys.argv[4])
+
 while not game_over:
 
-	#col = random_player.move(2, board)
-	col = minmax_player.move(2, board)
+	if player == 1: 
+		col = player_1.move(player, board, depth_1)
+	else:
+		col = player_2.move(player, board, depth_2)
 
 	if is_valid_location(board, col):
 		pygame.time.wait(500)
 		row = get_next_open_row(board, col)
-		drop_piece(board, row, col, AI_PIECE)
+		drop_piece(board, row, col, player)
 
-		if winning_move(board, AI_PIECE):
-			label = myfont.render("Player 2 wins!!", 1, YELLOW)
+		if winning_move(board, player):
+			color = YELLOW if player == 2 else RED
+			label = myfont.render(f"Player {player} wins!!", 1, color)
 			screen.blit(label, (40,10))
 			game_over = True
 
@@ -125,6 +146,9 @@ while not game_over:
 
 		turn += 1
 		turn = turn % 2
+
+	player = 2 if player == 1 else 1
+	pygame.time.wait(300)
 
 	if game_over:
 		pygame.time.wait(3000)

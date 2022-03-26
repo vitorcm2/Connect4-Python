@@ -7,7 +7,7 @@ class RandomPlayer(Player):
         return "Random"
 
     #
-    # retorn a coluna onde a bola será jogada
+    # retorna a coluna onde a bola será jogada
     #
-    def move(self, player_code, board):
+    def move(self, player_code, board, depth):
         return randint(0, 6)
