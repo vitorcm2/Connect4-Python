@@ -9,4 +9,5 @@ pymdown-extensions
 mkdocs-material
 mkdocs-git-revision-date-localized-plugin
 requests
+mkdocs-minify-plugin
 #file:exercises_plugin

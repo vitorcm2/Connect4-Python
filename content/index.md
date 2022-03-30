@@ -4,7 +4,7 @@ Liga4 é um jogo popular lançado pela empresa Milton Bradley Company (que foi a
 
 <p align="center">
 <figure>
-  <img src="lig4.jpg" alt="Jogo Liga4" />
+  <img src="img/lig4.jpg" alt="Jogo Liga4" />
 </figure>
 </p>
 
@@ -13,4 +13,4 @@ Liga4 é um jogo popular lançado pela empresa Milton Bradley Company (que foi a
 - ver um exemplo de jogo de *Connect-4* implementando usando pygame.
 - compreender de uma forma introdutória como utilizar o algoritmo [Min-Max](https://en.wikipedia.org/wiki/Minimax) no desenvolvimento de robô capaz de jogar *Connect-4*.
 
-Vá para a próxima [parte](configuracao.md) da aula.
+Vá para a próxima [parte](parte1.md) da aula.

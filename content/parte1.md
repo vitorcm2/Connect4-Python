@@ -1,26 +1,36 @@
-# Executando e jogando um Connect-4 eletrônico
+# Jogando entre humanos
 
 O objetivo desta atividade é você entender um pouco melhor o jogo e se 
 divertir executando uma versão do jogo onde espera-se que os *dois jogadores 
-sejam humanos*, pois a entrada dos dados é completamente manual. 
+sejam humanos*, pois a entrada dos dados é **completamente manual**. 
 
-Considerando que você está na raiz do projeto, você deve executar a seguinte 
-sequência de comandos:
+??? info "Liga4 virtual"
 
-```bash
-cd src
-python connect4.py
-```
+    Considerando que você está na raiz do projeto, você deve executar a seguinte sequência de comandos:
 
-Depois de você executar o comando acima deve aparecer uma tela parecida com esta:
+    ```bash
+    cd src
+    python connect4.py
+    ```
 
-<figure>
-  <img src="../connect4.png" width="300" />
-</figure>
+    Depois de você executar o comando acima deve aparecer uma tela parecida com esta:
+
+    <figure>
+      <img src="../img/connect4.png" width="300" />
+    </figure>
 
 
-**Vamos jogar um pouco?**
+??? question "Vamos jogar um pouco?"
+    * Deu para entender como o jogo funciona? 
+    * Você achou difícil ganhar do seu adversário? 
+    * Que capacidades uma pessoa precisa ter para jogar este jogo? 
 
-Deu para entender como o jogo funciona? Que tal abrir o código `connect4.py` e tentar entender o que 
-está escrito? O início do arquivo tem diversas funções que dizem respeito a lógica de funcionamento do jogo 
-*Connect-4*. No entanto, lá pela linha 94 começa toda uma lógica que está relacionado com o controle de eventos do pygame - algo que eu acho que você já sabe como funciona! 
+??? info "Exemplos de estados finais"
+
+    <figure>
+      <img src="../img/estados_finais.png" /> 
+    </figure>
+
+??? question "Será que é possível desenvolver um software capaz de jogar este jogo?"
+
+    [Colocando um robô na partida](parte2.md)

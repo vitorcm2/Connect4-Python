@@ -1,15 +1,66 @@
 # Colando um robô na partida
 
-Depois eles precisam alterar o código para fazer com que um dos jogadores seja um robô - num primeiro momento um robô que só faz movimentos aleatórios.
+??? info "Alterando o código"
 
-Depois eles são convidados a pensar em um algoritmo (só pensar) porque logo em seguida eu explico a ideia do min-max e função de utilidade.
+    Na linha 114 e 115 do arquivo [connect4.py](../src/connect4.py) é possível ver o seguinte trecho de código: 
 
-Eles são convidados a alterar o código do jogo para chamar a implementação do min-max e brincar com a profundidade.
+    ````python
+    posx = event.pos[0]
+	col = int(math.floor(posx/SQUARESIZE))
+    ````
 
-Eles são convidados a alterar o código para colocar dois robôs jogando um contra o outro.
+    Precisamos trocar este trecho por algo como: 
 
-No final posso finalizar a aula falando dos avanços da DeepMind nesta área (Go, Chess, Shogi, etc..)
+    ````python
+    col = player.move(player_code, board)
+    ````
 
-## Referências
+    Sendo que o `player` pode ser uma instância da classe: 
 
-* https://en.wikipedia.org/wiki/Connect_Four
+    ````python
+    class MeuJogador(Player):
+
+    def name(self):
+        return "Meu Jogador super simples"
+
+    def move(self, player_code, board):
+        # TODO lógica para escolher uma coluna
+        return col
+    ````
+
+??? question "Como podemos implementar um jogador super simples?"
+
+    Criando um jogador que joga de forma aleatória! 
+
+    ````python
+    from random import randint
+    from Player import Player
+
+    class RandomPlayer(Player):
+
+        def name(self):
+            return "Random"
+
+        #
+        # retorna a coluna onde a bola será jogada
+        #
+        def move(self, player_code, board, depth):
+            return randint(0, 6)
+    ````
+
+??? warning "Humanos versus um robô super simples"
+
+    Considerando que você já está no diretório `src`, digite:
+
+    ````bash
+    python connect4_with_ai.py random
+    ````
+
+??? question "Vamos implementar algo um pouco mais eficiente?" 
+
+    * Que abordagens podemos utilizar para implementar um robô mais **inteligente**? 
+    * O que seria uma robô mais "inteligente"?
+    
+??? done "Próxima etapa"
+
+    * [Implementando um robô mais inteligente](parte3.md)

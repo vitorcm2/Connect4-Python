@@ -15,15 +15,17 @@ edit_uri: edit/main/content/
 
 nav:
   - Introdução: index.md
-  - Instalação e configuração: configuracao.md
-  - Executando e jogando: parte1.md
+  - Jogando entre humanos: parte1.md 
   - Colocando um robô na partida: parte2.md
+  - Implementando um robô mais inteligente: parte3.md
+  - Instalação e configuração: configuracao.md
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
   - js/markdown-enhancer.js
 
 markdown_extensions:
+  - admonition
   - markdown.extensions.admonition
   - pymdownx.tasklist:
       custom_checkbox: true
