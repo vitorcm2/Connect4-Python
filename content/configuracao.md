@@ -20,5 +20,4 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Uma vez que o projeto está instalado e o ambiente virtual configuração então podemos ir
-para a próxima [parte](parte1.md).
+Uma vez que o projeto está instalado e o ambiente virtual configuração então podemos seguir o roteiro iniciando por [aqui](parte1.md).

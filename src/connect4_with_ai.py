@@ -152,6 +152,10 @@ while not game_over:
 			col = random_player.move(2, board, 0)
 		elif sys.argv[1] == 'minmax':
 			col = minmax_player.move(2, board, int(sys.argv[2]))
+		elif sys.argv[1] == 'flat':
+			col = minmax_player.move(2, board, 1)
+		elif sys.argv[1] == 'complete':
+			col = minmax_player.move(2, board, 20)
 
 		if is_valid_location(board, col):
 			pygame.time.wait(500)

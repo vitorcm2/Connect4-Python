@@ -63,4 +63,4 @@
     
 ??? done "Próxima etapa"
 
-    * [Implementando um robô mais inteligente](parte3.md)
+    * [Implementando um jogador que sabe jogar](parte3.md)
