@@ -1,4 +1,4 @@
-site_name: Pygame + Min-Max
+site_name: Implementando um jogador para Liga4
 
 theme:
   feature:
@@ -21,6 +21,8 @@ nav:
   - Implementando um robô ainda melhor: parte4.md
   - Algoritmo Min-Max (parte 1): parte5.md
   - Algoritmo Min-Max (parte 2): parte6.md
+  - Máquina contra máquina: parte7.md
+  - Um pouco de história: parte8.md
   - Instalação e configuração: configuracao.md
 
 extra_javascript:

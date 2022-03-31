@@ -1,10 +1,6 @@
 # Colando um robô na partida
 
-Depois eles precisam alterar o código para fazer com que um dos jogadores seja um robô - num primeiro momento um robô que só faz movimentos aleatórios.
 
-Depois eles são convidados a pensar em um algoritmo (só pensar) porque logo em seguida eu explico a ideia do min-max e função de utilidade.
-
-Eles são convidados a alterar o código do jogo para chamar a implementação do min-max e brincar com a profundidade.
 
 Eles são convidados a alterar o código para colocar dois robôs jogando um contra o outro.
 

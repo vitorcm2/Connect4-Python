@@ -24,6 +24,8 @@
     <img src="../img/comeco_completo.png" /> 
     </figure>
 
+    É necessário ter uma função qualquer na implementação que diga qual é a melhor ação. Por exemplo, dizendo qual é o estado que tem **maior utilidade** para o nosso robô.  
+
 ??? tip "Definindo algumas verificações"
 
     * é um movimento vencedor?

@@ -70,7 +70,7 @@
 
     $\mathcal{O}(b^{d}) = 6^{0} + 6^{1} + b^{2} + \cdots + 6^{42}$
 
-    $\equiv 1 + 6 + 36 + \cdots + 4.812298e+32$
+    $\equiv 1 + 6 + 36 + \cdots + 4.812298\mathrm{e}{+32}$
 
 ??? question "Será que precisamos explorar a árvore inteira?"
 
