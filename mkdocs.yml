@@ -22,8 +22,10 @@ nav:
   - Algoritmo Min-Max (parte 1): parte5.md
   - Algoritmo Min-Max (parte 2): parte6.md
   - Máquina contra máquina: parte7.md
-  - Um pouco de história: parte8.md
+  - Um pouco de história e tendências: parte8.md
+  - Referências: referencias.md 
   - Instalação e configuração: configuracao.md
+  - Min-Max com poda alpha-beta: alpha_beta.md
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js

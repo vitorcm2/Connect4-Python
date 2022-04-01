@@ -1,4 +1,4 @@
-# Um pouco de história
+# Um pouco de história e tendências
 
 ??? note "Origens"
 
@@ -25,4 +25,18 @@
 
 ??? question "O que mudou de Shannon até o Deep Blue?" 
 
-    
+    <figure>
+        <img src="../img/moravec.jpg" /> 
+    </figure>    
+
+    * Imagem retirada do artigo *[When will computer hardware match the human brain?](https://jetpress.org/volume1/moravec.pdf)* de Hans Moravec de 1997. 
+
+??? question "O avanço no jogo de xadrez parou depois do Deep Blue?" 
+
+    <figure>
+        <img src="../img/elo_rating.png" /> 
+    </figure>    
+
+    * Imagem retirada do texto *[Chess’s New Best Player Is A Fearless, Swashbuckling Algorithm](https://fivethirtyeight.com/features/chesss-new-best-player-is-a-fearless-swashbuckling-algorithm/)* publicado em 2018.
+
+    * Elo é um ranking utilizado para medir o desempenho de jogadores em qualquer jogo de soma zero, incluindo o xadrez.
