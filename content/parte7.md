@@ -33,6 +33,8 @@
 
 ??? question "Questões gerais"
 
+    * Será que uma pessoa pode aperfeiçoar o seu conhecimento sobre Liga4 jogando contra máquinas?
+
     * Será que uma pessoa pode aperfeiçoar o seu conhecimento sobre Liga4 estudando partidas feitas por duas máquinas?
 
     * Será que é possível uma máquina aprender a jogar Liga4 jogando contra uma outra máquina que sabe Liga4?
