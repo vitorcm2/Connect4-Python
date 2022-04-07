@@ -60,4 +60,8 @@
 
 ??? warning "Próximas atividades"
 
-    Se você quiser, é possível baixar todo o código na sua máquina, configurar o ambiente e executar o jogo e os jogadores na sua máquina local. Se esta for a sua intenção então você poe ir para o arquivo de [configuração](configuracao.md).
+    Se você quiser, é possível baixar todo o código na sua máquina, configurar o ambiente e executar o jogo e os jogadores na sua máquina local. Se esta for a sua intenção então você pode ir para o arquivo de [configuração](configuracao.md).
+
+??? warning "Material adicional"
+
+    Existe uma variante do algoritmo MinMax chamado MinMax com alpha-beta. A descrição de como esta variante funciona pode ser acessada [aqui](alpha_beta.md).

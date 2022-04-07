@@ -24,7 +24,7 @@
     def max_value(estado, p):
         if p == 0:
             return estado.eval()
-        v = -99999
+        v = -math.inf
         for s in estado.sucessores():
             v = MAX(v, min_value(s, p-1))
         return v
@@ -34,7 +34,7 @@
     def min_value(estado, p):
         if p == 0:
             return estado.eval()
-        v = 99999
+        v = math.inf
         for s in estado.sucessores():
             v = MIN(v, max_value(s, p-1))
         return v

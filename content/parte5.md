@@ -28,7 +28,7 @@
     def max_value(estado):
         if estado.eh_final():
             return estado.eval()
-        v = -99999
+        v = -math.inf
         for s in estado.sucessores():
             v = MAX(v, min_value(s))
         return v
@@ -38,7 +38,7 @@
     def min_value(estado):
         if estado.eh_final():
             return estado.eval()
-        v = 99999
+        v = math.inf
         for s in estado.sucessores():
             v = MIN(v, max_value(s))
         return v
