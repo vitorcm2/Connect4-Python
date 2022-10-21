@@ -45,9 +45,28 @@ def is_valid_location(board, col):
 
 def get_valid_locations(board):
 	valid_locations = []
-	for col in range(COLUMN_COUNT):
-		if is_valid_location(board, col):
-			valid_locations.append(col)
+
+	if is_valid_location(board, 3):
+		valid_locations.append(3)
+
+	if is_valid_location(board, 4):
+		valid_locations.append(4)
+
+	if is_valid_location(board, 2):
+		valid_locations.append(2)
+
+	if is_valid_location(board, 5):
+		valid_locations.append(5)
+
+	if is_valid_location(board, 1):
+		valid_locations.append(1)
+
+	if is_valid_location(board, 6):
+		valid_locations.append(6)
+
+	if is_valid_location(board, 0):	
+		valid_locations.append(0)
+
 	return valid_locations
 
 def evaluate_window(window, piece):
@@ -62,7 +81,6 @@ def evaluate_window(window, piece):
 		score += 5
 	elif window.count(piece) == 2 and window.count(EMPTY) == 2:
 		score += 2
-
 	if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
 		score -= 4
 
@@ -126,9 +144,10 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 			return (None, score_position(board, AI_PIECE))
 	if maximizingPlayer:
 		value = -math.inf
-		column = random.choice(valid_locations)
+		column = 0
 		for col in valid_locations:
 			row = get_next_open_row(board, col)
+			#deepcopy ???
 			b_copy = board.copy()
 			drop_piece(b_copy, row, col, AI_PIECE)
 			new_score = minimax(b_copy, depth-1, alpha, beta, False)[1]
@@ -142,9 +161,10 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 
 	else: # Minimizing player
 		value = math.inf
-		column = random.choice(valid_locations)
+		column = 0
 		for col in valid_locations:
 			row = get_next_open_row(board, col)
+			#deepcopy ???
 			b_copy = board.copy()
 			drop_piece(b_copy, row, col, PLAYER_PIECE)
 			new_score = minimax(b_copy, depth-1, alpha, beta, True)[1]
