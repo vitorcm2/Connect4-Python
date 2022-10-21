@@ -135,9 +135,9 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 	if depth == 0 or is_terminal:
 		if is_terminal:
 			if winning_move(board, AI_PIECE):
-				return (None, 100000000000000)
+				return (None, 100000000000000*(depth+1))
 			elif winning_move(board, PLAYER_PIECE):
-				return (None, -10000000000000)
+				return (None, -10000000000000*(depth+1))
 			else: # Game is over, no more valid moves
 				return (None, 0)
 		else: # Depth is zero
@@ -155,6 +155,7 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 				value = new_score
 				column = col
 			alpha = max(alpha, value)
+			# print(depth, value, new_score, column, valid_locations)
 			if alpha >= beta:
 				break
 		return column, value
